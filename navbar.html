@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light" style="/* background-color: #e3f2fd; */ font-family: 'Montserrat', sans-serif; height: 75px">
+
+		<!-- Name that leads to home page -->
+		<a class="navbar-brand" href="index.html" style="font-size: 170%">Ruolin Chen</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	    	<span class="navbar-toggler-icon"></span>
+	  	</button>
+	  	
+	  	<!-- Rest of the navigation bar -->
+		<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active" href="index.html">Home</a>
+				<a class="nav-item nav-link" href="about.html">About</a>
+				<a class="nav-item nav-link" href="education.html">Education</a>
+				<a class="nav-item nav-link" href="experience-skills.html">Experiences/Skills</a>
+				<a class="nav-item nav-link" href="Resume2019.pdf" target="_blank">Resume</a>
+				<a class="nav-item nav-link" href="contact.html">Contact</a>
+			</div>
+		</div>
+	</nav>
+
+	<script>
+	 	$(".navbar-nav a").on("click", function(){
+	   		$(".navbar-nav").find(".active").removeClass("active");
+	   		$(this).parent().addClass("active");
+		});
+	</script>
+	
+</html>
